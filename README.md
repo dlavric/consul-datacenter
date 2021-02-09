@@ -79,7 +79,7 @@ consul members
 
     Output:
 
-    ```
+    ```bash
     vagrant@n2:~$ consul members
     Node       Address            Status  Type    Build  Protocol  DC   Segment
     agent-two  172.20.20.11:8301  alive   client  1.9.3  2         dc1  <default>
@@ -99,7 +99,7 @@ consul members
 
     Output:
 
-    ```
+    ```bash
     vagrant@n1:~$ consul members
     Node       Address            Status  Type    Build  Protocol  DC   Segment
     agent-one  172.20.20.10:8301  alive   server  1.9.3  2         dc1  <all>
@@ -113,7 +113,7 @@ consul members
     
     Output:
 
-    ```
+    ```bash
     Successfully joined cluster by contacting 1 nodes.
     ```
 
@@ -125,7 +125,7 @@ consul members
 
     Output:
 
-    ```
+    ```bash
     Node       Address            Status  Type    Build  Protocol  DC   Segment
     agent-one  172.20.20.10:8301  alive   server  1.9.3  2         dc1  <all>
     agent-two  172.20.20.11:8301  alive   client  1.9.3  2         dc1  <default>
