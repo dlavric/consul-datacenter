@@ -77,9 +77,9 @@ vagrant ssh n2
 consul members
 ```
 
-Output:
+*Output:*
 
-    ```bash
+    ```
     vagrant@n2:~$ consul members
     Node       Address            Status  Type    Build  Protocol  DC   Segment
     agent-two  172.20.20.11:8301  alive   client  1.9.3  2         dc1  <default>
@@ -97,9 +97,9 @@ Output:
 consul members
 ```
 
-Output:
+*Output:*
 
-    ```bash
+    ```
     vagrant@n1:~$ consul members
     Node       Address            Status  Type    Build  Protocol  DC   Segment
     agent-one  172.20.20.10:8301  alive   server  1.9.3  2         dc1  <all>
@@ -111,9 +111,9 @@ Output:
  consul join 172.20.20.11
 ```
     
-Output:
+*Output:*
 
-    ```bash
+    ```
     Successfully joined cluster by contacting 1 nodes.
     ```
 
@@ -123,9 +123,9 @@ Now we will see both members in the node 1, by checking the consul members again
 consul members
 ```
 
-Output:
+*Output:*
 
-    ```bash
+    ```
     Node       Address            Status  Type    Build  Protocol  DC   Segment
     agent-one  172.20.20.10:8301  alive   server  1.9.3  2         dc1  <all>
     agent-two  172.20.20.11:8301  alive   client  1.9.3  2         dc1  <default>
