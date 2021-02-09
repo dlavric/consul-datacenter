@@ -72,11 +72,13 @@ vagrant ssh n2
 ```
 
 - Access the members of Consul:
+
 ```shell
 consul members
 ```
 
     Output:
+
     ```
     vagrant@n2:~$ consul members
     Node       Address            Status  Type    Build  Protocol  DC   Segment
@@ -96,6 +98,7 @@ consul members
 ```
 
     Output:
+
     ```
     vagrant@n1:~$ consul members
     Node       Address            Status  Type    Build  Protocol  DC   Segment
@@ -109,6 +112,7 @@ consul members
 ```
     
     Output:
+
     ```
     Successfully joined cluster by contacting 1 nodes.
     ```
@@ -120,6 +124,7 @@ consul members
 ```
 
     Output:
+
     ```
     Node       Address            Status  Type    Build  Protocol  DC   Segment
     agent-one  172.20.20.10:8301  alive   server  1.9.3  2         dc1  <all>
