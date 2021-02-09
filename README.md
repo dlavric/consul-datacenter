@@ -79,11 +79,11 @@ consul members
 
 *Output:*
 
-    
+```shell    
     vagrant@n2:~$ consul members
     Node       Address            Status  Type    Build  Protocol  DC   Segment
     agent-two  172.20.20.11:8301  alive   client  1.9.3  2         dc1  <default>
-    
+```    
 
 - Open a new terminal, ssh into node 1:
 
@@ -99,11 +99,11 @@ consul members
 
 *Output:*
 
-    
+```shell   
     vagrant@n1:~$ consul members
     Node       Address            Status  Type    Build  Protocol  DC   Segment
     agent-one  172.20.20.10:8301  alive   server  1.9.3  2         dc1  <all>
-    
+```    
 
 - Join the Consul Agents from the node 1:
 
@@ -113,9 +113,9 @@ consul members
     
 *Output:*
 
-    
+```shell    
     Successfully joined cluster by contacting 1 nodes.
-    
+```    
 
 Now we will see both members in the node 1, by checking the consul members again:
 
@@ -125,11 +125,11 @@ consul members
 
 *Output:*
 
-    
+```shell    
     Node       Address            Status  Type    Build  Protocol  DC   Segment
     agent-one  172.20.20.10:8301  alive   server  1.9.3  2         dc1  <all>
     agent-two  172.20.20.11:8301  alive   client  1.9.3  2         dc1  <default>
-    
+```    
 
 - Query a Consul agent's node using DNS interface:
 
@@ -139,6 +139,7 @@ dig @127.0.0.1 -p 8600 agent-two.node.consul
 
 - Stop the Consul agent with 'CTRL+C' from the terminal where Consul node 1 and 2 are running
 
+- Exit from the `ssh` with `exit`
 
 - Destroy the machine when you are finished:
 
