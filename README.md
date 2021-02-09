@@ -125,11 +125,11 @@ consul members
 
 *Output:*
 
-    ```
+    
     Node       Address            Status  Type    Build  Protocol  DC   Segment
     agent-one  172.20.20.10:8301  alive   server  1.9.3  2         dc1  <all>
     agent-two  172.20.20.11:8301  alive   client  1.9.3  2         dc1  <default>
-    ```
+    
 
 - Query a Consul agent's node using DNS interface:
 
