@@ -77,7 +77,7 @@ vagrant ssh n2
 consul members
 ```
 
-    Output:
+Output:
 
     ```bash
     vagrant@n2:~$ consul members
@@ -97,7 +97,7 @@ consul members
 consul members
 ```
 
-    Output:
+Output:
 
     ```bash
     vagrant@n1:~$ consul members
@@ -111,7 +111,7 @@ consul members
  consul join 172.20.20.11
 ```
     
-    Output:
+Output:
 
     ```bash
     Successfully joined cluster by contacting 1 nodes.
@@ -123,7 +123,7 @@ Now we will see both members in the node 1, by checking the consul members again
 consul members
 ```
 
-    Output:
+Output:
 
     ```bash
     Node       Address            Status  Type    Build  Protocol  DC   Segment
